@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Sayi 1:\n");
+    scanf("%d", &a);
+
+    int b;
+    printf("Sayi 2:\n");
+    scanf("%d", &b);
+
+    int c;
+    printf("Yapmak istediginiz islem:(Toplama=1, Cikarma=2, Carpma=3, Bolme=4, Mod=5)\n");
+    scanf("%d", &c);
+
+    int d = 0;
+    int e = 0;
+
+    if (a < b)
+            {
+            e = a;
+            a = b;
+            b = e;
+            }
+    if (c == 1)
+        d = a + b;
+    else if (c == 2)
+        d = a - b;
+    else if (c == 3)
+        d = a * b;
+    else if (c == 4)
+        d = a / b;
+    else if (c == 5)
+        d = a % b;
+    printf("Sonuc: %d", d);
+
+    return 0;
+}
